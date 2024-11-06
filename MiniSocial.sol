@@ -2,30 +2,30 @@
 pragma solidity ^0.8.0;
 
 contract MiniSocial {
-    // Structure to hold the message and the author's address
+    // Structure pour stocker le message et l'adresse de l'auteur
     struct Post {
-        string message;    // Message posted by the user
-        address author;    // Address of the user who posted the message
+        string message;    // Message publié par l'utilisateur
+        address author;    // Adresse de l'utilisateur qui a publié le message
     }
 
-    // Array to store all posts
+    // Tableau pour stocker tous les messages
     Post[] public posts;
 
-    // Function to publish a new post
+    // Fonction pour publier un nouveau message
     function publishPost(string memory _message) public {
-        // Create a new Post and add it to the posts array
+        // Créer un nouveau message et l'ajouter au tableau des messages
         posts.push(Post(_message, msg.sender));
     }
 
-    // Function to retrieve a post by its index
+    // Fonction pour récupérer un message par son index
     function getPost(uint index) public view returns (string memory, address) {
-        require(index < posts.length, "Post does not exist.");
-        // Return the message and author of the post at the given index
+        require(index < posts.length, "Le message n'existe pas.");
+        // Retourner le message et l'auteur du message à l'index donné
         Post memory post = posts[index];
         return (post.message, post.author);
     }
 
-    // Function to retrieve the total number of posts
+    // Fonction pour récupérer le nombre total de messages
     function getTotalPosts() public view returns (uint) {
         return posts.length;
     }

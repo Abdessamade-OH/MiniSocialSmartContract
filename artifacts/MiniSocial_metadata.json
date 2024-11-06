@@ -108,11 +108,11 @@
 	},
 	"sources": {
 		"MiniSocial.sol": {
-			"keccak256": "0xe6ebbe5b699effc573befcaafa852a8f3bf900db06f6eaa40a9b9a041848a58e",
+			"keccak256": "0xbdc48926a98a4922be761caa8655ac54b5d2aa444ac9e188d9371521de349211",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://cf06038e27627b643f5f1ad94ae063a53653ed420cd26eea099624b2b8559edc",
-				"dweb:/ipfs/QmcSNWi65a1ywxeJfCW6vshBct1U4pTXyJHYdZvN2BEHbv"
+				"bzz-raw://409026cec38004700dc0f9c02c4456117142a350c87fc9d99a6e3601f3014b5b",
+				"dweb:/ipfs/QmbdsM1WB4rhpb48CztqXgJtDGQk3WAFR2KnfCCyCW4Jtc"
 			]
 		}
 	},
