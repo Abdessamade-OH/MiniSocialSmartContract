@@ -11,6 +11,7 @@ contract MiniSocial {
     // Tableau pour stocker tous les messages
     Post[] public posts;
 
+
     // Fonction pour publier un nouveau message
     function publishPost(string memory _message) public {
         // Créer un nouveau message et l'ajouter au tableau des messages
